@@ -1,6 +1,6 @@
 {
   "terminal.integrated.fontSize": 14,
-
+  
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   
@@ -10,12 +10,14 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.semanticHighlighting.enabled": false,
-
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  
   "explorer.compactFolders": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.labelFormat": "short",
   "extensions.ignoreRecommendations": true,
-
+  
   "breadcrumbs.enabled": true,
   "editor.parameterHints.enabled": false,
   "explorer.confirmDragAndDrop": false,
@@ -26,16 +28,16 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-
+  
   "files.exclude": {
     "**/.git": true,
     "**/node_modules": true
   },
-
+  
   "[prisma]": {
     "editor.formatOnSave": true
   },
-
+  
   "files.associations": {
     ".sequelizerc": "javascript",
     ".stylelintrc": "json",
@@ -43,18 +45,18 @@
     "*.tsx": "typescriptreact",
     ".env.*": "dotenv"
   },
-
+  
   "emmet.syntaxProfiles": { "javascript": "jsx" },
   "emmet.includeLanguages": { "javascript": "javascriptreact" },
-
+  
   "git.enableSmartCommit": true,
-
+  
   "typescript.tsserver.log": "off",
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "material-icon-theme.activeIconPack": "nest",
   "screencastMode.onlyKeyboardShortcuts": true,
-
+  
   "material-icon-theme.folders.associations": {
     "infra": "app",
     "entities": "class",
@@ -72,19 +74,20 @@
     "_shared": "shared",
     "eslint-config": "tools"
   },
-
+  
   "material-icon-theme.folders.color": "#c3c3a7",
-
+  
   "material-icon-theme.files.associations": {
     "ormconfig.json": "database",
     "tsconfig.json": "tune",
-    "*.webpack.js": "webpack"
+    "*.webpack.js": "webpack",
+    ".env.local.example": "tune",
   },
-
+  
   "material-icon-theme.languages.associations": {
     "dotenv": "tune"
   },
-
+  
   "workbench.colorTheme": "Omni",
   "window.menuBarVisibility": "toggle",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -92,8 +95,8 @@
   "liveServer.settings.donotVerifyTags": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.showExitAlert": false,
-
+  
   "splitHTMLAttributes.closingBracketOnNewLine": true,
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "window.zoomLevel": 0
-}
+  "window.zoomLevel": -2
+  }
