@@ -8,3 +8,4 @@
 ## Split HTML Attributes (Vue, React, Angular)
 ## Svg Preview
 ## vscode-styled-components
+## DotENV
