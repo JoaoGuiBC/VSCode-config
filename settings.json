@@ -1,102 +1,115 @@
 {
   "terminal.integrated.fontSize": 14,
-  
-  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.showExitAlert": false,
+
+  "workbench.editor.labelFormat": "short",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.startupEditor": "newUntitledFile",
-  
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
+
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "editor.lineHeight": 26,
-  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
+  "editor.mouseWheelZoom": true,
+  "editor.suggestSelection": "first",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.guides.bracketPairs": "active",
+  "editor.renderLineHighlight": "gutter",
+  "editor.parameterHints.enabled": false,
   "editor.semanticHighlighting.enabled": false,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  
-  "explorer.compactFolders": false,
-  "editor.renderLineHighlight": "gutter",
-  "workbench.editor.labelFormat": "short",
-  "extensions.ignoreRecommendations": true,
-  
-  "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  
-  "editor.rulers": [80, 120],
-  
+  "editor.rulers": [
+    100,
+    120
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  
+
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "breadcrumbs.enabled": true,
+  "window.menuBarVisibility": "toggle",
+  "extensions.ignoreRecommendations": true,
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+
   "files.exclude": {
     "**/.git": true,
     "**/node_modules": true
   },
-  
-  "[prisma]": {
-    "editor.formatOnSave": true
-  },
-  
   "files.associations": {
-    ".sequelizerc": "javascript",
-    ".stylelintrc": "json",
+    ".env.*": "dotenv",
     ".prettierrc": "json",
+    ".stylelintrc": "json",
     "*.tsx": "typescriptreact",
-    ".env.*": "dotenv"
+    ".sequelizerc": "javascript"
   },
   
-  "emmet.syntaxProfiles": { "javascript": "jsx" },
-  "emmet.includeLanguages": { "javascript": "javascriptreact" },
-  
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  
-  "typescript.tsserver.log": "off",
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
+
   "material-icon-theme.activeIconPack": "nest",
-  "screencastMode.onlyKeyboardShortcuts": true,
-  
-  "material-icon-theme.folders.associations": {
-    "infra": "app",
-    "entities": "class",
-    "schemas": "class",
-    "typeorm": "database",
-    "repositories": "mappings",
-    "http": "container",
-    "migrations": "tools",
-    "modules": "components",
-    "dtos": "typescript",
-    "fakes": "mock",
-    "websockets": "pipe",
-    "websocket": "pipe",
-    "providers": "include",
-    "_shared": "shared",
-    "eslint-config": "tools"
-  },
-  
   "material-icon-theme.folders.color": "#c3c3a7",
-  
-  "material-icon-theme.files.associations": {
-    "ormconfig.json": "database",
-    "tsconfig.json": "tune",
-    "*.webpack.js": "webpack",
-    ".env.local.example": "tune",
-  },
-  
   "material-icon-theme.languages.associations": {
     "dotenv": "tune"
   },
-  
-  "workbench.colorTheme": "Omni",
-  "window.menuBarVisibility": "toggle",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.suggestSelection": "first",
+  "material-icon-theme.files.associations": {
+    "tsconfig.json": "tune",
+    "*.webpack.js": "webpack",
+    "tsconfig.node.json": "tune",
+    "ormconfig.json": "database",
+    ".env.local.example": "tune"
+  },
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "fakes": "mock",
+    "schemas": "class",
+    "entities": "class",
+    "websocket": "pipe",
+    "http": "container",
+    "_shared": "shared",
+    "dtos": "typescript",
+    "websockets": "pipe",
+    "typeorm": "database",
+    "migrations": "tools",
+    "providers": "include",
+    "modules": "components",
+    "eslint-config": "tools",
+    "repositories": "mappings"
+  },
+
   "liveServer.settings.donotVerifyTags": true,
+
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+
+  "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.showExitAlert": false,
+
+  // "deno.enable": true,
+  "typescript.tsserver.log": "off",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    //"editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   
-  "splitHTMLAttributes.closingBracketOnNewLine": true,
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "window.zoomLevel": -2
-  }
+  "[prisma]": {
+    "editor.formatOnSave": true,
+  },
+}
